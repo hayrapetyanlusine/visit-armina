@@ -1,0 +1,54 @@
+.armenia__slider {
+  display: flex;
+  flex-direction: column;
+  gap: 12.5rem;
+  position: relative;
+  max-width: 155.0rem;
+  margin: 0 auto;
+  padding: 7.6rem 0;
+
+  .embla {
+    --slide-spacing: 1rem;
+    --slide-size: 100%;
+    --slide-height: 19rem;
+
+    &__viewport {
+      overflow: hidden;
+      cursor: grab;
+    }
+
+    &__container {
+      backface-visibility: hidden;
+      display: flex;
+      gap: 3.75rem;
+      touch-action: pan-y;
+      position: relative;
+    }
+
+    &__btn {
+      cursor: pointer;
+      position: absolute;
+      left: -4.8rem;
+      top: 50%;
+    }
+
+    .right {
+      left: unset;
+      right: -4.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .armenia__slider {
+    padding: 7.6rem 1.4rem;
+    .embla {
+      &__container {
+        gap: 1.75rem;
+      }
+      &__btn {
+        display: none;
+      }
+    }
+  }
+}

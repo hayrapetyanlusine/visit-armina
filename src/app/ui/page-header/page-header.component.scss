@@ -1,0 +1,35 @@
+.page__header {
+  width: 100%;
+  height: 45.7rem;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  padding: 7.0rem;
+
+  &__name {
+    color: #F4F4F4;
+    font-weight: 600;
+    font-size: 5.4rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .page__header {
+    height: 25.7rem;
+    padding: 5.0rem;
+    &__name {
+      font-size: 4.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page__header {
+    height: 15.7rem;
+    padding: 2.5rem;
+    &__name {
+      font-size: 2.4rem;
+    }
+  }
+}

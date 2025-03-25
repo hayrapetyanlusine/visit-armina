@@ -1,0 +1,50 @@
+.media__card {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  background: #1F1F1F1A;
+  border-radius: 1.0rem;
+  overflow: hidden;
+  box-shadow: 3px 4px 12px #1A17173B;
+
+  &__img {
+    max-width: 45.0rem;
+    width: 100%;
+    box-shadow: 3px 4px 12px #1A17173B;
+  }
+
+  app-text-content {
+    padding: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .media__card {
+    gap: 0.4rem;
+
+    &__img {
+      max-width: 30.0rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .media__card {
+    flex-direction: column;
+    &__img {
+      max-width: unset;
+      height: 30.0rem;
+    }
+    app-text-content {
+      padding: 2.4rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .media__card {
+    &__img {
+      height: 20.0rem;
+    }
+  }
+}

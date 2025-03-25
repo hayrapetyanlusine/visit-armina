@@ -1,0 +1,30 @@
+<header class="header" [style.background]="isScrolled() ? '#1F1F1FCC' : ''">
+  <nav class="header__navigation">
+    <a class="header__navigation__item" routerLink="/">{{
+      "menu.home" | transloco
+    }}</a>
+    <a class="header__navigation__item" routerLink="/about-armenia">{{
+      "menu.about_armenia" | transloco
+    }}</a>
+    <a class="header__navigation__item" routerLink="/our-tours">{{
+      "menu.holiday_types" | transloco
+    }}</a>
+    <a class="header__navigation__item" routerLink="/must-to-see">{{
+      "menu.highlights" | transloco
+    }}</a>
+    <a class="header__navigation__item" routerLink="/useful-information">{{
+      "menu.useful_information" | transloco
+    }}</a>
+    <a class="header__navigation__item" routerLink="/who-we-are">{{
+      "menu.who_we_are" | transloco
+    }}</a>
+    <a class="header__navigation__item" routerLink="/gallery">{{
+      "menu.gallery" | transloco
+    }}</a>
+    <a class="header__navigation__item" routerLink="/contact">{{
+      "menu.contact" | transloco
+    }}</a>
+  </nav>
+  <app-language-switch />
+  <app-burger-menu />
+</header>

@@ -1,0 +1,26 @@
+<div class="tourism__slider">
+  <div class="embla">
+    <div
+      class="embla__viewport"
+      #emblaRef="emblaCarousel"
+      [emblaCarousel]="options"
+      [eventsThrottleTime]="100"
+    >
+      <div class="embla__container">
+        @for (slide of slideContent; track $index) {
+          <app-tourism-slider-item
+            [img]="slide.img"
+            [name]="slide.name"
+          />
+        }
+      </div>
+    </div>
+
+    <button class="embla__btn left" type="button" (click)="scrollToPrev()">
+      <img src="/svgs/chevron-left.svg" alt="left"/>
+    </button>
+    <button class="embla__btn right" type="button" (click)="scrollToNext()">
+      <img src="/svgs/chevron-right.svg" alt="right"/>
+    </button>
+  </div>
+</div>

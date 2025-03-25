@@ -1,0 +1,29 @@
+<div class="form">
+  <h2 class="form__title">Get in touch</h2>
+  <form class="contact__form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div class="info">
+      <label class="contact__form__label">
+        Your Name*
+        <input class="input" type="text" formControlName="name"/>
+      </label>
+      <label class="contact__form__label">
+        Your Email*
+        <input class="input" type="email" formControlName="email"/>
+      </label>
+    </div>
+    <label class="contact__form__label">
+      Subject*
+      <input class="input" type="text" formControlName="subject"/>
+    </label>
+    <label class="contact__form__label">
+      Message*
+      <textarea class="input textarea" formControlName="message"></textarea>
+    </label>
+
+    <button
+      class="contact__btn"
+      [disabled]="contactForm.invalid"
+      [class.disabled]="contactForm.invalid"
+    >Send</button>
+  </form>
+</div>

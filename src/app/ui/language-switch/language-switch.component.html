@@ -1,0 +1,23 @@
+<div class="form__select" [class.is-open]="isOpen()" (click)="openContent()">
+  <button class="form__select__head" aria-expanded="true">
+    <div class="language">
+      <div class="language__title">{{ currentLang() }}</div>
+      <img
+        src="/svgs/chevron.svg"
+        class="language__chevron"
+        [class.is-open]="isOpen()"
+        alt="chevron"
+      >
+    </div>
+  </button>
+
+  <div class="form__select__content" [class.is-open]="isOpen()">
+    @for (lang of languages(); track lang) {
+      <button
+        class="form__select__option"
+        (click)="onChange(lang)"
+        [class.active]="isActive(lang)"
+      > {{ lang }} </button>
+    }
+  </div>
+</div>

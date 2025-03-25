@@ -1,0 +1,116 @@
+.form__select {
+  position: relative;
+  height: 100%;
+  display: block;
+  width: 9.8rem;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    background: transparent;
+    color: #FDFBEE;
+    cursor: pointer;
+    min-width: 0;
+  }
+
+  .language {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+    width: 100%;
+    height: fit-content;
+    padding: 1.2rem;
+    cursor: pointer;
+
+    &__title {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.6rem;
+      color: #FDFBEE;
+    }
+
+    &__chevron {
+      width: 2rem;
+      height: 2rem;
+      color: #FDFBEE;
+      opacity: .7;
+      margin-left: auto;
+      transition: rotate .2s, opacity .2s;
+    }
+    &__chevron.is-open {
+      rotate: -180deg;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+    opacity: 0;
+    padding: .4rem;
+    border-radius: 1.2rem;
+    background: rgba(26, 26, 26, 0.4);
+    top: calc(100% + .8rem);
+    transform: translateY(-2rem);
+    max-height: 25rem;
+    transition: transform .2s, opacity .2s;
+  }
+  &__content.is-open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+
+  &__option {
+    display: flex;
+    align-items: center;
+    color: #FDFBEE;
+    font-size: 2rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    background-color: transparent;
+    cursor: pointer;
+    padding: .8rem;
+
+    &:hover {
+      background: rgba(26, 26, 26, 0.5);
+      border-radius: 1.2rem;
+    }
+  }
+
+  .active {
+    background: rgba(26, 26, 26, 0.5);
+    border-radius: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .form__select {
+    width: 7.5rem;
+    .language {
+
+      &__title {
+        font-size: 1.6rem;
+      }
+      &__chevron {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+    &__option {
+      font-size: 1.6rem;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<div class="burger__menu" (click)="openBurger()">
+  <span class="burger__span" [class.active]="isOpenBurger()"></span>
+</div>
+
+<div class="mobile__menu__content" [class.active]="isOpenBurger()">
+  <img
+    class="mobile__menu__close"
+    src="/svgs/close.svg"
+    alt="close"
+    (click)="isOpenBurger.set(false)"
+  />
+
+  <div class="mobile__menu__nav">
+    <a class="nav__item" routerLink="/" (click)="closeBurger()">{{
+        "menu.home" | transloco
+    }}</a>
+    <a class="nav__item" routerLink="/about-armenia" (click)="closeBurger()">{{
+        "menu.about_armenia" | transloco
+    }}</a>
+    <a class="nav__item" routerLink="/our-tours" (click)="closeBurger()">{{
+        "menu.holiday_types" | transloco
+    }}</a>
+    <a class="nav__item" routerLink="/must-to-see" (click)="closeBurger()">{{
+        "menu.highlights" | transloco
+    }}</a>
+    <a class="nav__item" routerLink="/useful-information" (click)="closeBurger()">{{
+        "menu.useful_information" | transloco
+    }}</a>
+    <a class="nav__item" routerLink="/who-we-are" (click)="closeBurger()">{{
+        "menu.who_we_are" | transloco
+    }}</a>
+    <a class="nav__item" routerLink="/gallery" (click)="closeBurger()">{{
+        "menu.gallery" | transloco
+    }}</a>
+    <a class="nav__item" routerLink="/contact" (click)="closeBurger()">{{
+        "menu.contact" | transloco
+    }}</a>
+  </div>
+  <hr class="line"/>
+  <app-language-switch />
+</div>

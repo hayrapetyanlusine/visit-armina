@@ -1,0 +1,89 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.text__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 1.4rem;
+}
+.tourism__content__wrapper {
+  width: 100%;
+  height: 65.0rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 21.0rem;
+}
+.slider__wrapper {
+  max-width: 125.0rem;
+  width: 100vw;
+  background: #FDFBEE;
+  position: absolute;
+  left: 50%;
+  bottom: -21.0rem;
+  transform: translateX(-50%);
+  padding: 6.4rem 3.4rem;
+  border-radius: 1.0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.slider__description {
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+
+  &__title {
+    font-weight: bold;
+    font-size: 3.2rem;
+  }
+
+  &__text {
+    font-size: 2.0rem;
+  }
+}
+.wrapper {
+  width: 100%;
+  background: #1F1F1F1A;
+  height: 75.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem;
+}
+
+@media screen and (max-width: 991px) {
+  .tourism__content__wrapper {
+    height: 50.0rem;
+  }
+  .slider__wrapper {
+    max-width: 75.0rem;
+  }
+  .slider__description {
+    padding: unset;
+    &__title {
+      font-size: 2.2rem;
+    }
+
+    &__text {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider__wrapper {
+    max-width: 30.0rem;
+  }
+  .wrapper {
+    height: auto;
+  }
+}

@@ -1,0 +1,25 @@
+<app-main-slider />
+
+<div class="text__wrapper">
+  <app-text-content
+    contentTitle="What we do"
+    text="Our tourist company offers tailored travel experiences, helping you explore the world’s top destinations with ease. From guided tours to custom itineraries, we ensure every journey is unforgettable. Whether you seek adventure, relaxation, or cultural discovery, we are dedicated to providing exceptional service and seamless trips. Let us make your next vacation a memorable one!"
+  />
+</div>
+
+<div
+  class="tourism__content__wrapper"
+  [style.background-image]="'linear-gradient(#00000080, #00000080), url(' + '/images/main-slide-3.png' + ')'"
+>
+  <div class="slider__wrapper">
+    <div class="slider__description">
+      <h3 class="slider__description__title">Top destinations</h3>
+      <p class="slider__description__text">Explore stunning places, from vibrant cities to serene getaways.</p>
+    </div>
+    <app-tourism-slider />
+  </div>
+</div>
+<div class="wrapper">
+  <app-videos />
+</div>
+<app-main-gallery />

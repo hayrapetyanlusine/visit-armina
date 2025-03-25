@@ -1,0 +1,101 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.4rem 1.4rem;
+  background: #1F1F1F1A;
+ margin-top: 5rem;
+
+  &__wrapper {
+    max-width: 135rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.2rem;
+  }
+
+  &__logo {
+    width: 20.0rem;
+    height: 20.0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__content__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+
+  &__contact__items {
+    display: flex;
+    flex-direction: column;
+    gap: 3.0rem;
+  }
+
+  &__contact__item,
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .socials {
+    padding-left: 0.5rem;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 3.0rem;
+  }
+
+  .create-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer {
+    font-size: 1.6rem;
+    &__content__wrapper {
+      gap: 1.8rem;
+    }
+
+    &__contact__items,
+    &__links {
+      gap: 2.0rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    &__logo {
+      width: 100%;
+    }
+
+    .create-container {
+      font-size: 1.2rem;
+      text-align: center;
+      padding-top: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .footer {
+    font-size: 1.4rem;
+    padding: 0 1.4rem 3.4rem 1.4rem;
+
+    &__title {
+      font-size: 1.6rem;
+    }
+  }
+}
