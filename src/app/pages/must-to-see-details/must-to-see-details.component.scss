@@ -1,0 +1,43 @@
+.place__info {
+  display: flex;
+  align-items: center;
+  gap: 4.0rem;
+  max-width: 155rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 0;
+  line-height: 4rem;
+
+  &__img {
+    max-width: 40.0rem;
+    height: 40.0rem;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .place__info {
+    line-height: 2.8rem;
+    padding: 5rem 1.4rem;
+
+    &__img {
+      max-width: 30.0rem;
+      height: 30.0rem;
+    }
+
+    &__text {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place__info {
+    flex-direction: column;
+
+    &__img {
+      max-width: unset;
+    }
+  }
+}

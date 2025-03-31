@@ -21,6 +21,10 @@ const children = [
       import('./pages/must-to-see/must-to-see.component'),
   },
   {
+    path: 'must-to-see/:id',
+    loadComponent: async () => import('./pages/must-to-see-details/must-to-see-details.component'),
+  },
+  {
     path: 'useful-information',
     loadComponent: async () =>
       import('./pages/useful-information/useful-information.component'),

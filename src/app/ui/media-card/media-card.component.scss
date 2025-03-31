@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   gap: 2.4rem;
-  background: #1F1F1F1A;
+  background: rgba(205, 225, 254, 0.2);
   border-radius: 1.0rem;
   overflow: hidden;
   box-shadow: 3px 4px 12px #1A17173B;
@@ -13,17 +13,34 @@
     box-shadow: 3px 4px 12px #1A17173B;
   }
 
-  app-text-content {
-    padding: 2.4rem;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    line-height: 2.8rem;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 2.8rem;
   }
 }
 
 @media screen and (max-width: 991px) {
   .media__card {
-    gap: 0.4rem;
+    gap: 1.4rem;
 
     &__img {
       max-width: 30.0rem;
+    }
+
+    &__content {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+    }
+
+    &__title {
+      font-size: 2.0rem;
     }
   }
 }
@@ -35,8 +52,8 @@
       max-width: unset;
       height: 30.0rem;
     }
-    app-text-content {
-      padding: 2.4rem 0;
+    &__content {
+      padding: 2rem;
     }
   }
 }

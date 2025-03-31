@@ -1,1 +1,10 @@
 <app-page-header name="Who we are" img="/images/header-5.png"/>
+
+<div class="who-we-are-content">
+  <div class="info-wrapper">
+    <div [innerHTML]="'who_we_are.sub_text' | transloco | safeHtml"></div>
+    <img class="info-wrapper__logo" ngSrc="/images/logo.png" alt="logo" height="206" width="309"/>
+  </div>
+  <div class="who-we-are-text" [innerHTML]="'who_we_are.text' | transloco | safeHtml"></div>
+  <p class="italic" [innerHTML]="'who_we_are.visit_armina' | transloco | safeHtml"></p>
+</div>

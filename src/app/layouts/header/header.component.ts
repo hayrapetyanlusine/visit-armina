@@ -2,7 +2,8 @@ import { Component, HostListener, signal } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 import { LanguageSwitchComponent } from '../../ui/language-switch/language-switch.component';
 import { BurgerMenuComponent } from '../../ui/burger-menu/burger-menu.component';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { ScrollTopDirective } from '../../directives/scroll-top/scroll-top.directive';
 
 @Component({
   selector: 'app-header',
@@ -11,6 +12,8 @@ import { RouterLink } from '@angular/router';
     LanguageSwitchComponent,
     BurgerMenuComponent,
     RouterLink,
+    ScrollTopDirective,
+    RouterLinkActive,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',

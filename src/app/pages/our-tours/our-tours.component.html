@@ -1,1 +1,18 @@
-<app-page-header name="Holiday types" img="/images/header-2.png"/>
+<app-page-header [name]="'our_tours.title' | transloco" img="/images/header-2.png"/>
+
+<div class="our__tours__intro">
+  <p>{{"our_tours.text" | transloco}}</p>
+</div>
+
+<div class="our__tours">
+  @for (tour of toures(); track $index) {
+    <app-tour-card
+      [name]="tour.name"
+      [text]="tour.description"
+    />
+  }
+</div>
+
+<div class="our__tours__call">
+  <p>{{"our_tours.call_text" | transloco}}</p>
+</div>

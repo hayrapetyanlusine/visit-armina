@@ -2,11 +2,18 @@
   "menu": {
     "home": "Գլխավոր",
     "about_armenia": "Հայաստանի մասին",
-    "holiday_types": "Արձակուրդների տեսակներ",
-    "highlights": "Առանձնահատկություններ",
+    "our_tours": "Մեր տուրերը",
+    "must_to_see": "Պետք է տեսնել",
     "useful_information": "Օգտակար տեղեկատվություն",
     "who_we_are": "Ով ենք մենք",
     "gallery": "Տեսադարան",
     "contact": "Կապ"
-  }
+  },
+  "media": [
+    {
+      "title": "Քրիստոնեության օրրան",
+      "text" : " ",
+      "img" : "/images/gallery-1.png"
+    }
+  ]
 }

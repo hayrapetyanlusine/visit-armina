@@ -1,4 +1,5 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
+import { ContactModalService } from '../../../services/contact-modal.service';
 
 @Component({
   selector: 'app-main-slider-item',
@@ -7,5 +8,6 @@ import { Component, input } from '@angular/core';
   styleUrl: './main-slider-item.component.scss'
 })
 export class MainSliderItemComponent {
+  protected readonly modalService = inject(ContactModalService);
   public img = input.required<string>();
 }

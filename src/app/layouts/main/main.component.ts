@@ -4,6 +4,7 @@ import { TextContentComponent } from '../../ui/text-content/text-content.compone
 import { TourismSliderComponent } from '../../sliders/tourism-slider/tourism-slider.component';
 import { MainGalleryComponent } from '../../ui/main-gallery/main-gallery.component';
 import { VideosComponent } from '../../ui/videos/videos.component';
+import { ContactModalComponent } from '../../ui/contact-modal/contact-modal.component';
 
 @Component({
   selector: 'app-main',
@@ -12,11 +13,10 @@ import { VideosComponent } from '../../ui/videos/videos.component';
     TextContentComponent,
     TourismSliderComponent,
     MainGalleryComponent,
-    VideosComponent
+    VideosComponent,
+    ContactModalComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
-export class MainComponent {
-
-}
+export class MainComponent {}

@@ -1,4 +1,7 @@
 <div class="media__card">
   <img class="media__card__img" [src]="img()" alt="img">
-  <app-text-content [contentTitle]="mediaTitle()" [text]="text()" />
+  <div class="media__card__content">
+    <h3 class="media__card__title">{{ mediaTitle() }}</h3>
+    <div class="media__card__text" [innerHTML]="text() | safeHtml"></div>
+  </div>
 </div>

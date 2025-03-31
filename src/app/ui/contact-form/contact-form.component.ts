@@ -1,13 +1,16 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ContactModalService } from '../../services/contact-modal.service';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-contact-form',
-  imports: [FormsModule, ReactiveFormsModule],
+  imports: [FormsModule, ReactiveFormsModule, NgOptimizedImage],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })
 export class ContactFormComponent {
+  protected readonly modalService = inject(ContactModalService);
   private readonly fb = inject(FormBuilder);
   protected readonly contactForm: FormGroup = this.fb.group({
     name: [null, [Validators.required]],

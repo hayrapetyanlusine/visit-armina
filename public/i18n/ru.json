@@ -2,11 +2,18 @@
   "menu": {
     "home": "Главная",
     "about_armenia": "Об Армении",
-    "holiday_types": "Типы отдыха",
-    "highlights": "Особенности",
+    "our_tours": "Наши туры",
+    "must_to_see": "Должно увидеть",
     "useful_information": "Полезная информация",
     "who_we_are": "Кто мы",
     "gallery": "Галерея",
     "contact": "Контакты"
-  }
+  },
+  "media": [
+    {
+      "title": "Колыбель христианства",
+      "text" : " ",
+      "img" : "/images/gallery-1.png"
+    }
+  ]
 }

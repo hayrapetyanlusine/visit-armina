@@ -1,12 +1,20 @@
-.highlight__text {
+.must__to__see__text{
   max-width: 155.0rem;
   width: 100%;
   margin: 0 auto;
   padding: 5rem 0;
   line-height: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
 }
 
-.highlight__images {
+.desc__title {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.must__to__see__images {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
@@ -19,25 +27,31 @@
 }
 
 @media screen and (max-width: 991px) {
-  .highlight__images {
+  .must__to__see__images{
     padding: 5rem 1.4rem;
     grid-template-columns: repeat(3, 1fr);
   }
-  .highlight__text {
+  .must__to__see__text {
     padding: 5rem 1.4rem;
     line-height: 2.5rem;
     font-size: 1.8rem;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .highlight__images {
-    grid-template-columns: repeat(2, 1fr);
+  .desc__title {
+    font-size: 2.4rem;
   }
 }
 
-@media screen and (max-width: 520px) {
-  .highlight__images {
+@media screen and (max-width: 960px) {
+  .must__to__see__images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .desc__title {
+    font-size: 2.0rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .must__to__see__images {
     grid-template-columns: repeat(1, 1fr);
   }
 }

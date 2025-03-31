@@ -5,34 +5,35 @@
 <div class="mobile__menu__content" [class.active]="isOpenBurger()">
   <img
     class="mobile__menu__close"
-    src="/svgs/close.svg"
+    ngSrc="/svgs/close.svg"
     alt="close"
     (click)="isOpenBurger.set(false)"
+    height="24" width="24"
   />
 
   <div class="mobile__menu__nav">
-    <a class="nav__item" routerLink="/" (click)="closeBurger()">{{
+    <a class="nav__item" routerLink="/" (click)="closeBurger()" appScrollTop>{{
         "menu.home" | transloco
     }}</a>
-    <a class="nav__item" routerLink="/about-armenia" (click)="closeBurger()">{{
+    <a class="nav__item" routerLink="/about-armenia" routerLinkActive="active" (click)="closeBurger()" appScrollTop>{{
         "menu.about_armenia" | transloco
     }}</a>
-    <a class="nav__item" routerLink="/our-tours" (click)="closeBurger()">{{
-        "menu.holiday_types" | transloco
+    <a class="nav__item" routerLink="/our-tours" routerLinkActive="active" (click)="closeBurger()" appScrollTop>{{
+        "menu.our_tours" | transloco
     }}</a>
-    <a class="nav__item" routerLink="/must-to-see" (click)="closeBurger()">{{
-        "menu.highlights" | transloco
+    <a class="nav__item" routerLink="/must-to-see" routerLinkActive="active" (click)="closeBurger()" appScrollTop>{{
+        "menu.must_to_see" | transloco
     }}</a>
-    <a class="nav__item" routerLink="/useful-information" (click)="closeBurger()">{{
+    <a class="nav__item" routerLink="/useful-information" routerLinkActive="active" (click)="closeBurger()" appScrollTop>{{
         "menu.useful_information" | transloco
     }}</a>
-    <a class="nav__item" routerLink="/who-we-are" (click)="closeBurger()">{{
+    <a class="nav__item" routerLink="/who-we-are" routerLinkActive="active" (click)="closeBurger()" appScrollTop>{{
         "menu.who_we_are" | transloco
     }}</a>
-    <a class="nav__item" routerLink="/gallery" (click)="closeBurger()">{{
+    <a class="nav__item" routerLink="/gallery" routerLinkActive="active" (click)="closeBurger()" appScrollTop>{{
         "menu.gallery" | transloco
     }}</a>
-    <a class="nav__item" routerLink="/contact" (click)="closeBurger()">{{
+    <a class="nav__item" routerLink="/contact" routerLinkActive="active" (click)="closeBurger()" appScrollTop>{{
         "menu.contact" | transloco
     }}</a>
   </div>

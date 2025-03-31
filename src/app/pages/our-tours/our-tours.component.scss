@@ -1,0 +1,33 @@
+.our__tours {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3.0rem;
+  max-width: 155rem;
+  width: 100%;
+  padding: 5.6rem 0;
+}
+.our__tours__intro,
+.our__tours__call {
+  max-width: 155rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.6rem 0;
+  line-height: 3.5rem;
+}
+.our__tours__call {
+  color: #0d2b5a;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 991px) {
+  .our__tours {
+    padding: 1.6rem 1.4rem;
+  }
+  .our__tours__intro,
+  .our__tours__call {
+    padding: 2.2rem 1.4rem;
+    font-size: 1.8rem;
+  }
+
+}

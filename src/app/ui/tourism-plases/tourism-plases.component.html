@@ -1,0 +1,11 @@
+<div
+  class="tourism__item"
+  [class.slide]="isSlideItem()"
+  [routerLink]="link()"
+  [style.background-image]="'url(' + img() + ')'"
+  appScrollTop
+>
+  <div class="tourism__item__name__wrapper">
+    <p class="tourism__item__name">{{ name() }}</p>
+  </div>
+</div>

@@ -1,1 +1,18 @@
-<app-page-header name="Useful information" img="/images/header-4.png"/>
+<app-page-header name="Useful information" img="/images/gallery-1.png"/>
+
+<div class="useful__information">
+  <p> {{ "useful_information.title" | transloco }} </p>
+
+  <div class="useful__information__item" [innerHTML]="'useful_information.geography' | transloco | safeHtml"></div>
+  <div class="useful__information__item" [innerHTML]="'useful_information.visa' | transloco | safeHtml"></div>
+  <div class="useful__information__item" [innerHTML]="'useful_information.currency' | transloco | safeHtml"></div>
+  <div class="useful__information__item" [innerHTML]="'useful_information.language' | transloco | safeHtml"></div>
+  <div class="useful__information__item" [innerHTML]="'useful_information.best_time' | transloco | safeHtml"></div>
+  <div class="useful__information__item" [innerHTML]="'useful_information.transportation' | transloco | safeHtml"></div>
+  <div class="useful__information__item" [innerHTML]="'useful_information.safety' | transloco | safeHtml"></div>
+  <div class="useful__information__item" [innerHTML]="'useful_information.food' | transloco | safeHtml"></div>
+  <div class="useful__information__item" [innerHTML]="'useful_information.electrical_outlets' | transloco | safeHtml"></div>
+  <div class="useful__information__item" [innerHTML]="'useful_information.tips' | transloco | safeHtml"></div>
+
+  <div class="contact__info" [innerHTML]="'useful_information.contact' | transloco | safeHtml"></div>
+</div>

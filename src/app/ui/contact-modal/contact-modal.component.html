@@ -1,0 +1,9 @@
+<div
+  class="modal-shadow"
+  [class.open]="modalService.isModalOpen()"
+  (click)="modalService.closeModal()"
+>
+  <div class="modal-contact-form" (click)="$event.stopPropagation()">
+    <app-contact-form />
+  </div>
+</div>

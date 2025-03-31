@@ -1,11 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 import { LanguageSwitchComponent } from '../language-switch/language-switch.component';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { ScrollTopDirective } from '../../directives/scroll-top/scroll-top.directive';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-burger-menu',
-  imports: [TranslocoPipe, LanguageSwitchComponent, RouterLink],
+  imports: [TranslocoPipe, LanguageSwitchComponent, RouterLink, ScrollTopDirective, RouterLinkActive, NgOptimizedImage],
   templateUrl: './burger-menu.component.html',
   styleUrl: './burger-menu.component.scss'
 })

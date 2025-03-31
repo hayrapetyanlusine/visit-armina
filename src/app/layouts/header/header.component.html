@@ -1,30 +1,45 @@
 <header class="header" [style.background]="isScrolled() ? '#1F1F1FCC' : ''">
   <nav class="header__navigation">
-    <a class="header__navigation__item" routerLink="/">{{
+    <a class="header__navigation__item" routerLink="/" appScrollTop>{{
       "menu.home" | transloco
     }}</a>
-    <a class="header__navigation__item" routerLink="/about-armenia">{{
+    <a class="header__navigation__item" routerLink="/about-armenia" routerLinkActive="active" appScrollTop>{{
       "menu.about_armenia" | transloco
     }}</a>
-    <a class="header__navigation__item" routerLink="/our-tours">{{
-      "menu.holiday_types" | transloco
+    <a class="header__navigation__item" routerLink="/our-tours" routerLinkActive="active" appScrollTop>{{
+      "menu.our_tours" | transloco
     }}</a>
-    <a class="header__navigation__item" routerLink="/must-to-see">{{
-      "menu.highlights" | transloco
+    <a class="header__navigation__item" routerLink="/must-to-see" routerLinkActive="active" appScrollTop>{{
+      "menu.must_to_see" | transloco
     }}</a>
-    <a class="header__navigation__item" routerLink="/useful-information">{{
+    <a class="header__navigation__item" routerLink="/useful-information" routerLinkActive="active" appScrollTop>{{
       "menu.useful_information" | transloco
     }}</a>
-    <a class="header__navigation__item" routerLink="/who-we-are">{{
+    <a class="header__navigation__item" routerLink="/who-we-are" routerLinkActive="active" appScrollTop>{{
       "menu.who_we_are" | transloco
     }}</a>
-    <a class="header__navigation__item" routerLink="/gallery">{{
+    <a class="header__navigation__item" routerLink="/gallery" routerLinkActive="active" appScrollTop>{{
       "menu.gallery" | transloco
     }}</a>
-    <a class="header__navigation__item" routerLink="/contact">{{
+    <a class="header__navigation__item" routerLink="/contact" routerLinkActive="active" appScrollTop>{{
       "menu.contact" | transloco
     }}</a>
   </nav>
   <app-language-switch />
+  <div class="socials">
+      <span class="socials__item">
+        <a
+          target="_blank"
+          href="https://www.facebook.com/people/Visit-Armina/61572801273485"
+        >
+          <img src="/svgs/facebook.svg" alt="facebook" />
+        </a>
+      </span>
+    <span class="socials__item">
+        <a target="_blank" href="https://www.instagram.com/visitarmina">
+          <img src="/svgs/instagram.svg" alt="instagram" />
+        </a>
+      </span>
+  </div>
   <app-burger-menu />
 </header>

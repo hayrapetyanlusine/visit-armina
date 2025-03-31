@@ -1,0 +1,10 @@
+<app-page-header [name]="place()?.name" img="/images/armenia-new-header.webp"/>
+
+@if (place()) {
+  <div class="place__info">
+    <img class="place__info__img" [src]="place().img" alt="img">
+    <div class="place__info__text" [innerHTML]="place().info | safeHtml"></div>
+  </div>
+}
+
+<app-must-see-slider />

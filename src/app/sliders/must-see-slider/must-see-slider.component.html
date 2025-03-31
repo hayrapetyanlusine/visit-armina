@@ -1,0 +1,32 @@
+<div class="must__see__slider">
+  <div class="slider__name">
+    <h3>{{ "must_to_see.slider_name" | transloco }}</h3>
+  </div>
+
+  <div class="embla">
+    <div
+      class="embla__viewport"
+      #emblaRef="emblaCarousel"
+      [emblaCarousel]="options"
+      [eventsThrottleTime]="100"
+    >
+      <div class="embla__container">
+        @for (place of places(); track place.id) {
+          <app-tourism-plases
+            [img]="place.img"
+            [name]="place.name"
+            [link]="['/must-to-see', place.id]"
+            [isSlideItem]="true"
+          />
+        }
+      </div>
+    </div>
+
+    <button class="embla__btn left" type="button" (click)="scrollToPrev()">
+      <img src="/svgs/chevron-left.svg" alt="left"/>
+    </button>
+    <button class="embla__btn right" type="button" (click)="scrollToNext()">
+      <img src="/svgs/chevron-right.svg" alt="right"/>
+    </button>
+  </div>
+</div>

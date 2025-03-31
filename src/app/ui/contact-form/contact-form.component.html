@@ -26,4 +26,8 @@
       [class.disabled]="contactForm.invalid"
     >Send</button>
   </form>
+
+  @if(modalService.isModalOpen()) {
+    <img (click)="modalService.closeModal()" class="close" ngSrc="/svgs/close.svg" alt="close" height="24" width="24">
+  }
 </div>

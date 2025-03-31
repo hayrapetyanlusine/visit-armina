@@ -1,28 +1,18 @@
-<app-page-header name="About Armenia" img="/images/header-1.png"/>
+<app-page-header name="Armenia at a glance" img="/images/header-1.png"/>
 
 <div class="about__armenia">
-  <p class="about__armenia__text">
-    Armenia, a land of ancient history and natural beauty, is a hidden gem in the Caucasus. From the majestic views of Mount Ararat to the serene shores of Lake Sevan, Armenia offers breathtaking landscapes. With its rich cultural heritage, Armenia is home to some of the world’s oldest churches, monasteries, and art. The country's vibrant traditions, warm people, and delicious cuisine make it a unique and welcoming destination for travelers seeking both history and adventure.
-  </p>
-  <img class="about__armenia__img" src="/images/map.png" alt="map"/>
+  <p class="about__armenia__text" [innerHTML]="'about_armenia_text' | transloco | safeHtml"></p>
+  <img class="about__armenia__img" ngSrc="/images/map.png" alt="map" height="500" width="488"/>
 </div>
 
 <div class="media__wrapper">
+  @for (mediaItem of media(); track $index) {
   <app-media-card
-    mediaTitle="LIfe in Armenia"
-    text="Armenian culture is a blend of ancient traditions, rich art, music, and unique customs, celebrated through its language, cuisine, and historic landmarks."
-    img="/images/gallery-1.png"
+    [mediaTitle]="mediaItem.title"
+    [text]="mediaItem.text"
+    [img]="mediaItem.img"
   />
-  <app-media-card
-    mediaTitle="LIfe in Armenia"
-    text="Armenian culture is a blend of ancient traditions, rich art, music, and unique customs, celebrated through its language, cuisine, and historic landmarks."
-    img="/images/gallery-1.png"
-  />
-  <app-media-card
-    mediaTitle="LIfe in Armenia"
-    text="Armenian culture is a blend of ancient traditions, rich art, music, and unique customs, celebrated through its language, cuisine, and historic landmarks."
-    img="/images/gallery-1.png"
-  />
+  }
 </div>
 
 <app-armenia-slider />

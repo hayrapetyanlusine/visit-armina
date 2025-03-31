@@ -1,10 +1,13 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { TranslocoService } from '@jsverse/transloco';
 import { Langs } from '../../interfaces/langs';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-language-switch',
-  imports: [],
+  imports: [
+    NgOptimizedImage
+  ],
   templateUrl: './language-switch.component.html',
   styleUrl: './language-switch.component.scss'
 })

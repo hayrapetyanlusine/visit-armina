@@ -1,15 +1,18 @@
-<app-page-header name="Highlights" img="/images/header-3.png"/>
+<app-page-header name="Must to see" img="/images/header-3.png"/>
 
-<p class="highlight__text">
-  Explore the top highlights of tourism, featuring must-visit destinations, iconic landmarks, cultural experiences, and hidden gems. From breathtaking natural wonders to vibrant city attractions, discover what makes each journey unforgettable.
-</p>
+<p class="must__to__see__text"> {{ "must_to_see.title" | transloco }}</p>
 
-<div class="highlight__images">
-  <app-tourism-slider-item img="/images/gallery-4.png" name="Jermuk"/>
-  <app-tourism-slider-item img="/images/gallery-5.png" name="Goris"/>
-  <app-tourism-slider-item img="/images/gallery-6.png" name="Sardarapat"/>
-  <app-tourism-slider-item img="/images/gallery-7.png" name="Garni"/>
-  <app-tourism-slider-item img="/images/gallery-8.png" name="Spitakavor"/>
-  <app-tourism-slider-item img="/images/tourism-6.png" name="Sevanavank Monastery"/>
-  <app-tourism-slider-item img="/images/tourism-2.png" name="Yerevan"/>
+<div class="must__to__see__images">
+  @for (place of places(); track place.id) {
+    <app-tourism-plases
+      [img]="place.img"
+      [name]="place.name"
+      [link]="['/must-to-see', place.id]"
+    />
+  }
+</div>
+
+<div class="must__to__see__text">
+  <h3 class="desc__title">{{ "must_to_see.tour-description.title" | transloco }}</h3>
+  <div [innerHTML]="'must_to_see.tour-description.text' | transloco | safeHtml"></div>
 </div>

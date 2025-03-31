@@ -1,9 +1,9 @@
 import { Component, input } from '@angular/core';
-import { TextContentComponent } from '../text-content/text-content.component';
+import { HtmlPipe } from '../../pipes/html.pipe';
 
 @Component({
   selector: 'app-media-card',
-  imports: [TextContentComponent],
+  imports: [HtmlPipe],
   templateUrl: './media-card.component.html',
   styleUrl: './media-card.component.scss'
 })

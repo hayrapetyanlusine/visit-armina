@@ -7,10 +7,12 @@
   gap: 5.0rem;
   max-width: 85.6rem;
   width: 100%;
+  position: relative;
 
   &__title {
     font-weight: 600;
     font-size: 3.2rem;
+    color: #1A1717;;
   }
 
   .contact__form {
@@ -60,6 +62,18 @@
       }
     }
   }
+
+  .close {
+    width: 4.0rem;
+    height: 4.0rem;
+    background: #aaaaaa;
+    border-radius: 1.0rem;
+    padding: 0.2rem;
+    position: absolute;
+    right: 4.5rem;
+    top: 5.5rem;
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -78,6 +92,14 @@
         width: 15.7rem;
         padding: 1.4rem 1.8rem;
       }
+    }
+
+    .close {
+      width: 2.0rem;
+      height: 2.0rem;
+      border-radius: 0.7rem;
+      right: 2.5rem;
+      top: 3.5rem;
     }
   }
 }

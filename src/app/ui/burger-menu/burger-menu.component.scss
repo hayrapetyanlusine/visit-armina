@@ -83,7 +83,8 @@
     cursor: pointer;
     transition: color .3s;
 
-    &:hover {
+    &:hover,
+    &.active {
       color: #FE4F2D;
     }
   }
