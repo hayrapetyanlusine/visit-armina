@@ -23,6 +23,7 @@ const children = [
   {
     path: 'must-to-see/:id',
     loadComponent: async () => import('./pages/must-to-see-details/must-to-see-details.component'),
+    renderMode: 'ssr',
   },
   {
     path: 'useful-information',
