@@ -17,10 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "prerender": {
-              "discoverRoutes": false
-            },
-            "outputPath": "dist/visit-armina/browser",
+            "outputPath": "dist/visit-armina",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [],
@@ -37,7 +34,7 @@
             ],
             "scripts": [],
             "server": "src/main.server.ts",
-
+            "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
             }
