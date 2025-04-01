@@ -20,7 +20,7 @@
             "prerender": {
               "discoverRoutes": false
             },
-            "outputPath": "dist/visit-armina/server/browser",
+            "outputPath": "dist/visit-armina/browser",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [],
