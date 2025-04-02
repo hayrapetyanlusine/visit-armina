@@ -3,9 +3,7 @@ import { TextContentComponent } from '../text-content/text-content.component';
 
 @Component({
   selector: 'app-videos',
-  imports: [
-    TextContentComponent
-  ],
+  imports: [TextContentComponent],
   templateUrl: './videos.component.html',
   styleUrl: './videos.component.scss'
 })

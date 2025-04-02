@@ -79,11 +79,14 @@
   }
 }
 
+@media screen and (max-width: 875px) {
+  .wrapper {
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .slider__wrapper {
     max-width: 30.0rem;
-  }
-  .wrapper {
-    height: auto;
   }
 }
