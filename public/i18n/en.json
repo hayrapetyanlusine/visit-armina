@@ -49,7 +49,11 @@
     "food" : "<h3 style='font-weight: bold;'>8. Food &amp; Drinks</h3><ul style='list-style: disc;'><li style='margin-left: 3.5rem;'>Must-try dishes: <span style='font-weight: bold;'>Khorovats (BBQ), Dolma, Harissa, and Gata.</span></li><li style='margin-left: 3.5rem;'> Armenia is famous for <span style='font-weight: bold;'>wine and brandy </span>– don’t miss a tasting tour!</li><li style='margin-left: 3.5rem;'><span style='font-weight: bold;'>Pulpulak</span> – Armenia is known as<span style='font-weight: bold;'>&quot;the land of free water&quot;</span>, thanks to its numerous traditional public fresh drinking fountains found in every city and village.</li></ul>",
     "electrical_outlets" : "<h3 style='font-weight: bold;'>9. Electrical Outlets</h3><ul style='list-style: disc;'><li style='margin-left: 3.5rem;'>Voltage: <span style='font-weight: bold;'>230V, 50Hz.</span></li><li style='margin-left: 3.5rem;'>Plug type: <span style='font-weight: bold;'>European standard (Type C &amp; F).</span></li><li style='margin-left: 3.5rem;'>Time - GMT +4 hours</li></ul>",
     "tips" : "<h3 style='font-weight: bold;'>10. Local Etiquette &amp; Tips</h3><ul style='list-style: disc;'> <li style='margin-left: 3.5rem;'><span style='font-weight: bold;'>Hospitality is key</span>– Armenians are incredibly welcoming, and it’s common to be invited for coffee or even a meal.</li><li style='margin-left: 3.5rem;'><span style='font-weight: bold;'>Respect religious sites</span>– Cover shoulders and knees when visiting churches and monasteries.</li><li style='margin-left: 3.5rem;'><span style='font-weight: bold;'>Tipping</span> is appreciated but not mandatory (5-10% in restaurants).</li></ul>",
-    "contact" : "For any questions or assistance, feel free to <span style='font-weight: bold;'>contact us!</span> We’re here to make your trip unforgettable."
+    "contact" : {
+      "f_part" : "For any questions or assistance, feel free to",
+      "modal_text" : "contact us!",
+      "l_part" : "We’re here to make your trip unforgettable!"
+    }
   },
   "must_to_see" : {
     "title" : "Armenia, a land of ancient history and breathtaking landscapes, is home to countless must-visit sites. From awe-inspiring monasteries perched on cliffs to serene lakes and vibrant cities, here are the top places you should explore during your visit.",

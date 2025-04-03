@@ -14,5 +14,9 @@
   <div class="useful__information__item" [innerHTML]="'useful_information.electrical_outlets' | transloco | safeHtml"></div>
   <div class="useful__information__item" [innerHTML]="'useful_information.tips' | transloco | safeHtml"></div>
 
-  <div class="contact__info" [innerHTML]="'useful_information.contact' | transloco | safeHtml"></div>
+  <div class="contact__info">
+    <span>{{ 'useful_information.contact.f_part' | transloco }}</span>
+    <span class="modal" (click)="modalService.openModal()">{{ 'useful_information.contact.modal_text' | transloco }}</span>
+    <span>{{ 'useful_information.contact.l_part' | transloco }}</span>
+  </div>
 </div>
