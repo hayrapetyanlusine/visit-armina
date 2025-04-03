@@ -1,14 +1,17 @@
 <footer class="footer">
   <div class="footer__wrapper">
-    <div class="footer__logo">
-      <img src="/images/logo.png" alt="logo" />
+    <div class="company__info">
+      <div class="footer__logo">
+        <img src="/images/logo.png" alt="logo" />
+      </div>
+      <div class="company__hvhh" [innerHTML]="'who_we_are.hvhh' | transloco | safeHtml"></div>
     </div>
     <div class="footer__content__wrapper">
       <p class="footer__title">Information</p>
       <div class="footer__links">
         <a class="footer__links__item" routerLink="/" appScrollTop>{{
-          "menu.home" | transloco
-        }}</a>
+            "menu.home" | transloco
+          }}</a>
         <a class="footer__links__item" routerLink="/about-armenia" appScrollTop>
           {{ "menu.about_armenia" | transloco }}</a
         >
@@ -16,23 +19,23 @@
           {{ "menu.our_tours" | transloco }}</a
         >
         <a class="footer__links__item" routerLink="/must-to-see" appScrollTop>{{
-          "menu.must_to_see" | transloco
-        }}</a>
+            "menu.must_to_see" | transloco
+          }}</a>
         <a
           class="footer__links__item"
           routerLink="/useful-information"
           appScrollTop
-          >{{ "menu.useful_information" | transloco }}</a
+        >{{ "menu.useful_information" | transloco }}</a
         >
         <a class="footer__links__item" routerLink="/who-we-are" appScrollTop>{{
-          "menu.who_we_are" | transloco
-        }}</a>
+            "menu.who_we_are" | transloco
+          }}</a>
         <a class="footer__links__item" routerLink="/gallery" appScrollTop>{{
-          "menu.gallery" | transloco
-        }}</a>
+            "menu.gallery" | transloco
+          }}</a>
         <a class="footer__links__item" routerLink="/contact" appScrollTop>{{
-          "menu.contact" | transloco
-        }}</a>
+            "menu.contact" | transloco
+          }}</a>
       </div>
     </div>
     <div class="footer__content__wrapper">
@@ -45,7 +48,7 @@
         <div class="footer__contact__item">
           <img src="/svgs/email.svg" alt="email" />
           <a href="mailto:info@visitarmina.am" target="_blank"
-            >info&#64;visitarmina.am</a
+          >info&#64;visitarmina.am</a
           >
         </div>
       </div>
@@ -62,9 +65,7 @@
       </div>
     </div>
     <div class="create-container">
-      <i
-        ><p>&copy; {{ currentYear }} .All Rights Reserved.</p></i
-      >
+      <i><p>&copy; {{ currentYear }} .All Rights Reserved.</p></i>
     </div>
   </div>
 </footer>
