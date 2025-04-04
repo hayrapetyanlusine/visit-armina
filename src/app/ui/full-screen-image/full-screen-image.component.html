@@ -1,5 +1,5 @@
 @if (fullScreen.isOpen()) {
   <div class="fullscreen-overlay" (click)="fullScreen.closeFullscreen()">
-    <img [ngSrc]="fullScreen.selectedImg()" fill alt="img"/>
+    <img [src]="fullScreen.selectedImg()" alt="img"/>
   </div>
 }
