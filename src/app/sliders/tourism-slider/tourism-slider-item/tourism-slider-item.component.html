@@ -1,6 +1,7 @@
 <div
   class="tourism__item"
   [style.background-image]="'url(' + img() + ')'"
+  (click)="fullScreen.openFullscreen(img())"
 >
   <div class="tourism__item__name__wrapper">
     <p class="tourism__item__name">{{ name() }}</p>

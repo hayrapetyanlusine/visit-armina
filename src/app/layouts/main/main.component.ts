@@ -5,6 +5,7 @@ import { TourismSliderComponent } from '../../sliders/tourism-slider/tourism-sli
 import { MainGalleryComponent } from '../../ui/main-gallery/main-gallery.component';
 import { VideosComponent } from '../../ui/videos/videos.component';
 import { ContactModalComponent } from '../../ui/contact-modal/contact-modal.component';
+import { FullScreenImageComponent } from '../../ui/full-screen-image/full-screen-image.component';
 
 @Component({
   selector: 'app-main',
@@ -14,7 +15,8 @@ import { ContactModalComponent } from '../../ui/contact-modal/contact-modal.comp
     TourismSliderComponent,
     MainGalleryComponent,
     VideosComponent,
-    ContactModalComponent
+    ContactModalComponent,
+    FullScreenImageComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'

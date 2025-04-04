@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
-import { ContactModalService } from '../../services/contact-modal.service';
+import { ContactModalService } from '../../services/modal/contact-modal.service';
 
 @Component({
   selector: 'app-contact-modal',

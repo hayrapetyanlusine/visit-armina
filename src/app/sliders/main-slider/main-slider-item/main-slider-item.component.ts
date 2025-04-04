@@ -1,5 +1,5 @@
 import { Component, inject, input } from '@angular/core';
-import { ContactModalService } from '../../../services/contact-modal.service';
+import { ContactModalService } from '../../../services/modal/contact-modal.service';
 
 @Component({
   selector: 'app-main-slider-item',

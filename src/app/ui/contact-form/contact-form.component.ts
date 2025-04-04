@@ -1,6 +1,6 @@
 import { Component, inject, input } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { ContactModalService } from '../../services/contact-modal.service';
+import { ContactModalService } from '../../services/modal/contact-modal.service';
 import { NgOptimizedImage } from '@angular/common';
 
 @Component({
